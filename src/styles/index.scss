@@ -1,0 +1,9 @@
+// globals
+@import "./global/general";
+
+// admin pages
+@import "../pages/Admin/Login/login", "../pages/Admin/New/new",
+  "../pages/Admin/Home/home", "../pages/Admin/All/all";
+
+// admin components
+@import "../components/Sidebar/sidebar", "../components/Header/header";

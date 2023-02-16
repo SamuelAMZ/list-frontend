@@ -1,0 +1,150 @@
+@import "../../../styles/global/variables";
+
+.stats-container-jd {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+
+  .stat-jd {
+    background-color: $white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #8b8b8b35;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    font-size: 50px;
+    gap: 0.5rem;
+
+    div {
+      font-size: 15px;
+      color: $second;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-transform: capitalize;
+
+      .desc {
+        font-size: 17px;
+        color: $dash;
+      }
+    }
+  }
+}
+
+.loaderAnalytics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+// home rest
+.home-rest {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0 7rem 0;
+
+  .card-elm {
+    background-color: $white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid rgba(139, 139, 139, 0.2078431373);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.welcome-stuffs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid rgba(139, 139, 139, 0.2078431373);
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+.simple-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: center;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+
+      font-size: 20px;
+      color: $accent;
+
+      background-color: $white;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 2px solid rgba(139, 139, 139, 0.2078431373);
+
+      p {
+        font-size: 15px;
+        color: $dash;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.some-news {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+  }
+
+  .news-elm {
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(139, 139, 139, 0.2078431373);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h4 {
+      font-size: 17px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 15px;
+      color: $dash;
+      font-weight: 400;
+    }
+  }
+}

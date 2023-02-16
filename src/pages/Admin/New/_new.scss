@@ -1,0 +1,48 @@
+//imports
+@import "../../../styles/global/variables";
+
+.newad-elements {
+  background-color: $white;
+  width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 1.8rem;
+  border-radius: 10px;
+
+  .heading {
+    margin-bottom: 2rem;
+    color: #252733;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .data-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .form-elm {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .sbm-btn {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.note {
+  padding: 1rem;
+  background-color: #25273322;
+  border-radius: 15px;
+}
+
+// date time picker
+.react-datetime-picker__clock.react-datetime-picker__clock--open {
+  display: none;
+}
+
+.react-datetime-picker__wrapper {
+  border: none !important;
+}

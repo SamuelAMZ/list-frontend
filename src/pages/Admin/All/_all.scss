@@ -1,0 +1,103 @@
+@import "../../../styles/global/variables";
+
+.all-page-backbone {
+  background-color: $white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid rgba(139, 139, 139, 0.2078431373);
+  margin-bottom: 7rem;
+}
+
+.headings-all {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: $dash;
+  }
+  p {
+    font-size: 15px;
+    color: #a4a6b3;
+  }
+}
+
+.all-ads-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+
+  .one-ad {
+    background-color: $white;
+    border-radius: 10px;
+    border: 2px solid rgba(139, 139, 139, 0.2078431373);
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      max-height: 300px;
+      min-height: 300px;
+    }
+    .-other-details {
+      padding: 1rem;
+      word-wrap: break-word;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .collapse {
+        color: $accent;
+        border-radius: 10px;
+        border: 2px solid rgba(139, 139, 139, 0.2078431373);
+      }
+      .collapse-content {
+        color: $dash;
+      }
+    }
+  }
+}
+
+.buttons-action {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100px;
+
+  position: absolute;
+  top: 1rem;
+  left: 0;
+
+  .action-btn {
+    width: 100%;
+    font-size: 11px;
+    text-transform: capitalize;
+    font-weight: 400;
+    background-color: $accent;
+    color: $white;
+    padding: 0.5rem;
+    border-radius: 0 50px 50px 0;
+    text-align: start;
+
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+
+    svg {
+      font-size: 16px;
+      pointer-events: none;
+    }
+  }
+  .button-black {
+    background-color: $dash;
+  }
+}
